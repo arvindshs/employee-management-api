@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1>Employee Management</h1>
+
+    <div class="container">
+    <div class="card">
+        <h2>Add Employee</h2>
+        <input id="name" placeholder="Name" />
+        <input id="email" placeholder="Email" />
+        <input id="role" placeholder="Role" />
+        <input id="salary" placeholder="Salary" type="number" />
+        <button onclick="addEmployee()">Add Employee</button>
+    </div>
+    <!-- Update Employee Form -->
+    <div class="card">
+        <h2>Update Employee</h2>
+        <input id="updateId" placeholder="Employee ID" type="number" />
+        <input id="updateName" placeholder="New Name" />
+        <input id="updateEmail" placeholder="New Email" />
+        <input id="updateRole" placeholder="New Role" />
+        <input id="updateSalary" placeholder="New Salary" type="number" />
+        <button onclick="updateEmployee()">Update</button>
+    </div>
+    
+    <!-- Get Employee By ID -->
+    <div class="card">
+        <h2>Find Employee</h2>
+        <input id="findId" placeholder="Enter ID" type="number" />
+        <button onclick="findEmployee()">Find</button>
+        
+        <p id="findResult"></p>
+    </div>
+</div>
+
+
+    <!-- Employee List -->
+    <h2>All Employees</h2>
+    <button onclick="loadEmployees()">Refresh List</button>
+
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Salary</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

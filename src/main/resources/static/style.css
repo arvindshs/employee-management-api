@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+/* Modern Card Styling */
+.card {
+    background: #ffffff;
+    padding: 28px 32px;
+    margin: 24px auto;
+    width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card input {
+    width: 100%;
+    box-sizing: border-box;
+    /* THE IMPORTANT FIX */
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1.5px solid #dcdcdc;
+    font-size: 15px;
+    background: #fafafa;
+}
+
+/* Hover effect like real UI cards */
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Section titles */
+.card h2 {
+    margin-bottom: 6px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Modern input styling */
+input {
+    width: 100%;
+    padding: 14px 16px;
+    /* UX-recommended input spacing */
+    border-radius: 10px;
+    border: 1.5px solid #dcdcdc;
+    
+    
+    font-size: 15px;
+    transition: 0.2s;
+    background: #fafafa;
+}
+
+/* Focus state like premium designs */
+input:focus {
+    border-color: #4f8cff;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.2);
+    outline: none;
+}
+
+/* Premium button design */
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4f8cff, #6a5af9);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.25s ease;
+    margin-top: 6px;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete {
+    background: red;
+}
+
+.update {
+    background: green;
+}
