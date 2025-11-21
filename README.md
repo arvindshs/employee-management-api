@@ -1,5 +1,5 @@
+🚀 Employee Management System  
 ```markdown
-# 🚀 Employee Management System  
 ### Spring Boot + MySQL + JPA + HTML/CSS/JS
 
 A simple full-stack Employee Management System using Spring Boot for backend and HTML/CSS/JS for the frontend. Supports full CRUD operations with a clean UI and MySQL integration.
